@@ -9,7 +9,7 @@ This is the **mandatory** file
 ***Learn the steps***
 useful Link [Github Learning](https://docs.github.com/en/get-started/quickstart/set-up-git)
 ## updates to the readme file
-[x] - trying once again
-[x] - making sure the branching, and commit works
-[ ] - merging the changes to main
+- [X] trying once again
+- [x] making sure the branching, and commit works
+- [ ] merging the changes to main
 
