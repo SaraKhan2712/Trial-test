@@ -13,3 +13,9 @@ useful Link [Github Learning](https://docs.github.com/en/get-started/quickstart/
 - [x] making sure the branching, and commit works
 - [ ] merging the changes to main
 
+***Life is great***
+1. You learn with experience
+2. The more issues, the more learning
+3. I want to keep **LEARNING**
+
+Dated: 20-Jan
