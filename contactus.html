@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="UTF-8">
+    <title> Contact Us </title>
+    <link rel="icon" type="images/x-ixon" href="/images/favicon.ico">
+    <style>
+        footer { 
+            text-align: center;
+        background-color: rgb(177, 172, 172);
+        color: black;
+        }
+        li a:hover{background-color: aqua;}
+        body{background-color:rgb(161, 196, 236)};
+              
+    </style>    
+</head>
+
+    <body>
+        <div>
+            <ul style="background-color: rgb(146, 160, 243); padding:0;list-style-type: none; margin: o; overflow: hidden;  ">
+                <li style="float: left; display: block; padding: 16px;" > <a href="index.html"> <b>Home</b></a></li>
+                <li style="float: left; display: block; padding: 16px;"> <a href="aboutus.html"> <b>About Us</b></a></li>
+                <li style="float: left; display: block; padding: 16px;"> <a href="glowfish.html"> <b>Glo Fish</b></a></li>
+                <li style="float: left; display: block; padding: 16px;"><a href="angelfish.html"> <b>Angel Fish</b></a></li>
+                <li style="float: left; display: block; padding: 16px;"><a href="platty.html"> <b>Platy Fish</b></a></li>
+                <li style="float: left; display: block; padding: 16px;"><a href="contactus.html"> <b>Contact Us</b></a></li>
+            </ul>
+        </div>
+        <div>
+            <header>
+                <h1>
+                    Here to Help!
+                </h1>
+            </header>
+        </div>
+    <hr>
+    <div>
+        <address>
+            <u><b>For any enquiry</b></u> <br>
+            <b>Email:</b><a href="mailto:123@example.com">123@example.com</a> <br>
+            <b>Mail:</b>29 Alice Land <br>
+            PO Box 2312, Wonderland <br>
+            Canada
+        </address>
+    </div>
+    <br>
+    <div>
+        <h2>Feedback and Query Form</h2>
+            <p>You can provide the suggestions and post the queries by submitting the form below</p>
+                <form>
+                    <fieldset>
+                        <legend style="text-align: center;"> <b>Personal Details</b></legend>
+                        <label for="fname"> <b>First Name:*</b></label><br>
+                        <input type="text" id="fname" name="fname" required autofocus minlength="5" size="25"><br>
+                        <label for="lname"> <b>Last Name:*</b></label><br>
+                        <input type="text" id="lname" name="lname" required minlength="4" size="25"><br>
+                        <label for="email"> <b>Email:</b></label> <br>
+                        <input type="email" id="email" name="email" size="25"><br>
+                        <label for="phone"> <b>Telephone:</b></label> <br>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-4125" pattern="[0-9] {3}-[0-9]{3}-[0-9]{4}" size="10"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend style="text-align:center ;"><b>Suggestion and Query Details</b></legend>
+                        <label for="category"> <b>Category:</b></label><br>
+                        <input type="checkbox" id="suggestion" name="suggestion" value="Suggestion">
+                        <label for="suggestion"> Suggestion </label> <br>
+                        <input type="checkbox" id="query" name="query" value="Query">
+                        <label for="query"> Query</label><br><br>
+                        <label for="suggestiontype"> <b>Do you want to see information on</b> (select multiple if applicable):</label>
+                        <input list="suggestiontype" name="suggestiontype">
+                        <datalist id="suggestiontype" >
+                        <!--<select id="suggestiontype" name="suggestiontype" size="2" multiple>-->
+                            <option value="Guppies">
+                            <option value="Goldfish"> 
+                            <option value="Mollies"> 
+                            <option value="Tetras"> 
+                            <option value="Others">
+                            </datalist>
+                        <!--</select>--><br><br>
+                        <label for="comment"><b>Please provide your suggestion/query in the textbox below:</b></label><br>
+                            <textarea name="comment" rows="6" cols="30" placeholder="Please provide your query/suggestion here."></textarea>
+                        <br><br>
+                        <label for="file"><b>Upload the image if you are not sure of the name/species of the fish:</b></label>
+                        <input type="file" name="file" id="file"><br><br>
+                        <label for="recommend"> <b>Will you recommend the site to your friends?</b></label><br>
+                            <select id="recommend" name="recommend" required>
+                                <option value="maybe">Maybe</option>
+                                <option value="yes" selected>Yes</option>
+                                <option value="no"> No</option>
+                            </select><br><br>
+
+                        <label for="submissiondate"><b>Provide today's date:</b></label><br>
+                        <input type="date" name="submissiondate" id="submissiondate" min="today's date"><br><br>
+                        <button type="button" onclick="alert('Thank you for submitting your query/suggestion. Our team with contact you shortly!')">Submit</button>
+                        <input type="reset">
+                        <button type="button" onclick="alert('Are you sure that you want to cancel?')">Cancel</button><br>
+                        <!--<input type="button" value="Cancel"><br>-->
+                    </fieldset>
+                </form>
+        </div>
+        <div>
+            <section>
+                <a href="platty.html" style="text-decoration: gray;">Previous Page</a>
+                <a href="index.html" style="color: rgb(76, 112, 21); float: right;">Home Page</a>
+            </section>
+        </div>
+        <div>  
+            <footer>
+                <p> <b>Copyright (C), 2022-2023, <i>All rights reserved.</i></b></p>
+            </footer>
+        </div>
+        </body>
+    </html>
