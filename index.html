@@ -7,44 +7,30 @@
     <meta name="revised" content="27-Jan-2023">
     <meta name="author" content="Sara Khan">
     <meta http-equiv="refresh" content="600">
-    <title> Aqua Knowledge - Aquarium Fish </title>
+    <title>Aqua Knowledge - Aquarium Fish</title>
+    <link href="styles/style.css" rel="stylesheet"/>
     <link rel="icon" type="images/x-ixon" href="/images/favicon.ico">
-    <style>
-        li a:hover{background-color: aqua; padding: au;}
-        footer { 
-            text-align: center;
-        background-color: rgb(177, 172, 172);
-        color: black;
-        }
-        img {
-            float: left;
-            width: 300px;
-            height: 200px;
-            object-fit:cover ;
-        }
-                     
-     </style>    
+       
 </head>
-    <body style="background-color: rgb(161, 196, 236); background-size: cover;">
-        <div>
-            <ul style="background-color: rgb(146, 160, 243); padding:0;list-style-type: none; margin: o; overflow: hidden;  ">
-                <li style="float: left; display: block; padding: 16px;" > <a href="index.html"> <b>Home</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"> <a href="aboutus.html"> <b>About Us</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"> <a href="glowfish.html"> <b>Glo Fish</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"><a href="angelfish.html"> <b>Angel Fish</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"><a href="platty.html"> <b>Platy Fish</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"><a href="contactus.html"> <b>Contact Us</b></a></li>
-            </ul>
-        </div>
-    <br>
-<div>
-    <header> 
-        <h1>
-            Welcome to Aqua Knowledge - It's all about Fish! 
+<div class="container">  
+<body>
+
+           
+            <div class="navigation">
+                <header>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="glowfish.html">Glo Fish</a>
+                <a href="angelfish.html">Angel Fish</a>
+                <a href="platty.html">Platy Fish</a>
+                <a href="contactus.html">Contact Us</a>
+            </header>
+            </div>
             
-        </h1>
-    </header> 
-    <hr>
+<main>
+    <div>
+    <h1 class="heading1">Welcome to Aqua Knowledge - It's all about Fish!</h1>        
+      <hr>
         <p> If you are interested in learning about some of the most fascinating and adorable aquarium fishes, then you are at the right place! 
         <p> Here we'll learn about 3 species, which are popular in almost every home, especially liked by kids!</p>
         <ol>
@@ -52,26 +38,28 @@
             <li>Angel Fish</li>
             <li>Platy Fish</li>
         </ol>
-
     <br>
-        <img src="glofishpet.jfif" alt="Various colored Glo Fish in the tank"> 
-        <img src="angelfish1.JPG" alt="White angel fish" >
-        <img src="platyfish.jfif" alt="Golden platy fish in a aquarium" >
-    <br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <img src="glofishpet.jfif" alt="Multiple colored Glo Fish in the tank" class="index"> 
+        <img src="angelfish1.JPG" alt="White angel fish" class="index">
+        <img src="platyfish.jfif" alt="Golden platy fish in a aquarium" class="index">
+    </div>
 </div>
 <div>
-    <p style="font-size:30px" > Grab your seat and let's <b>EXPLORE</b></p>
-    <p><b>Note: </b>If you do not find relevant information, please let us know by providing your <a href="contactus.html"> <b>Feedback</b></a></p>
+    <p><strong><span class="highlight">Grab your seat and let's EXPLORE!</span></strong></p>
+    <p><strong>Note: </strong>If you do not find relevant information, please let us know by providing your <a href="contactus.html">Feedback</a></p>
     <br>
 </div>
 <div>
     <section>
-        <a href="contactus.html" style="text-decoration: gray;">Last Page</a>
-        <a href="aboutus.html" style="color: rgb(76, 112, 21); float: right;">Next Page</a>
+        <span class="buttonnav"><a href="contactus.html">Last Page</a></span>
+    <span class="buttonnav1"><a href="aboutus.html">Next Page >></a></span>
     </section>
 </div>
+</main>
 <footer>
-    <p> <b>Copyright (C), 2022-2023, <i>All rights reserved.</i></b></p>
+    <p>Copyright (C), 2022-2023, <em>All rights reserved.</em></p>
 </footer>
+</div>  
     </body>
     </html>
