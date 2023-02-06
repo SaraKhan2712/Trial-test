@@ -1,0 +1,354 @@
+html
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+body{
+    background-color: aliceblue;
+    background-size: cover;
+    margin: 2px;
+}
+
+.container{
+margin: 0, auto;
+width: 99.7%;
+/*max-width: 1000px;*/
+}
+
+
+/* style the links */
+a:link {
+    color: rgb(17, 0, 255);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+a:hover, 
+a:focus {
+    background-color: aqua;
+    color: black;
+}
+
+.foc:focus
+{
+    color: black;
+}
+/***To add the image on the Contact Us page**/
+.bkgrnd {
+    background-image: url("../contactus.jfif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: none ;
+    border-style: double;
+    background-color: rgb(211, 212, 240);
+    padding-bottom: 50px;
+    padding-top: 20px;
+    }
+
+h2{
+    font-size: 25px;
+    color:rgb(3, 26, 128);
+    margin-bottom: 0px;
+    font-style: italic;
+    font-weight: bold ;
+    margin-left: 15px;
+}
+
+/* for the bold characters */
+.bold {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/*style the images and paragraph around it*/
+.angel img{
+    float: left;
+    border-image: 2px solid black;
+    padding-right: 30px;
+    width: 200px;
+    margin-left: 20px;
+    }
+
+.angel {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    }
+
+/*style the glowfish page*/
+.glofish img{
+    float: right;
+    padding-left: 0px;
+    width: 400px;
+    margin-right: 40px;
+    padding-top: none;
+    outline-width: 10px;
+    outline-style: groove;
+    outline-color: black;
+}
+
+
+/*style the index page images*/
+.index{
+    float: justify;
+    width: 300px;
+    height: 200px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+}
+
+/* All paragraphs*/
+p{
+    font-size: 16px;
+    margin-left: 15px;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* to implement the main heading with background*/
+.heading1{
+color: white;
+background-image: url("../background.jfif");
+padding: 20px 20px;
+border: 10px none red;
+margin-left: none;
+margin: none;
+margin-top: 25px;
+margin-bottom: 5px;
+background-position: cover;
+font-size: 30px;
+text-transform: capitalize;
+
+}
+
+.highlight
+{
+    background-color: aqua;
+    font-size: larger;
+}
+
+
+/* style the navigation bar*/
+.navigation a
+{
+float:left;
+display: block;
+padding: 16px 16px;
+color: aliceblue;
+text-align: center;
+text-decoration: none;
+margin-left: 40px;
+
+}
+
+.navigation{
+    overflow: hidden;
+background-color: blue;
+
+}
+
+.navigation a:hover
+{
+    background-color: aqua;
+    color: black;
+}
+
+/* style the Glofish page navigation bar*/
+.navigation1 a
+{
+float:left;
+display: block;
+padding: 10px;
+text-align: left;
+text-decoration: none;
+margin-left: 40px;
+color: black;
+margin-right: 40px;
+
+}
+
+.navigation1{
+    overflow: hidden;
+background-color: rgb(202, 202, 214);
+
+}
+
+.navigation1 a:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/* style the about us image*/
+.author{
+    margin-top: 8px;
+    width: 150px;
+    float: left;
+    padding-right: 20px;
+    border-image-width: 2px;
+    margin-left: 15px;
+    }
+
+/* form styling*/
+fieldset{
+    border: 2px solid rgb(66, 62, 62);
+    text-align: left;
+    padding-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+form{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+legend{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
+
+input[type=text], [type=email], [type=tel]
+{
+    width: 100%;
+    padding: 12px 20px;
+    height: 40px;
+    margin: 0px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-weight: bold;
+}
+
+input[type=text]:focus, [type=email]:focus, [type=tel]:focus
+{
+    background-color: aquamarine;
+    color: black;
+}
+
+.button{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    text-align: center;
+    margin-top: 40px;
+    }
+
+label{
+    font-weight: bold;
+}
+
+.break{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*table styling*/
+table, tr, th, td {
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    margin-left: 10px;
+    height: 30px;
+    }
+
+tr {
+    text-align: left;
+}
+
+tr:hover{
+    background-color: aquamarine;
+    }
+
+tr:nth-child(even)
+{background-color: lightblue;}
+table{
+    padding-top: 20px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.tab2{
+    background-color: rgb(104, 104, 211);
+    color: white;
+    text-align: center;
+}
+#SomeFacts{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.cap1{
+    margin-bottom: 20px;
+    background-color: rgb(64, 133, 179);
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+.particle{
+width: 35%;
+float:left;
+}
+
+.paside{
+    width: 35%;
+    float: right;
+}
+
+.paside p{
+    font-weight: bold;
+}
+
+.trivia{
+    clear: both;
+}
+
+
+label{
+    margin-top: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    white-space: 10px;
+
+}
+/*Botttom left button navigation*/
+.buttonnav{
+    margin-top: 50px;
+    background-color: rgb(81, 228, 120);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(81, 228, 120);
+    padding: 3px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    float: left;
+}
+/*Botttom right button navigation*/
+.buttonnav1{
+   margin-top: 50px;
+    background-color: rgb(81, 228, 120);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(81, 228, 120);
+    padding: 3px;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 200px;
+}
+
+/**** For the footer of the pages*****/
+footer
+{
+    text-align: center;
+    background-color: rgb(177, 172, 172);
+    color: black;
+    display: block;  
+    clear: both;
+    margin-bottom: 40px;
+    padding: 30px;
+    font-weight: bold;
+    
+}
+

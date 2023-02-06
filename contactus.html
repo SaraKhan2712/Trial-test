@@ -1,113 +1,106 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
     <head>
     <meta charset="UTF-8">
     <title> Contact Us </title>
     <link rel="icon" type="images/x-ixon" href="/images/favicon.ico">
-    <style>
-        footer { 
-            text-align: center;
-        background-color: rgb(177, 172, 172);
-        color: black;
-        }
-        li a:hover{background-color: aqua;}
-        body{background-color:rgb(161, 196, 236)};
-              
-    </style>    
-</head>
+    <link href="styles/style.css" rel="stylesheet"/>
+    </head>
 
     <body>
-        <div>
-            <ul style="background-color: rgb(146, 160, 243); padding:0;list-style-type: none; margin: o; overflow: hidden;  ">
-                <li style="float: left; display: block; padding: 16px;" > <a href="index.html"> <b>Home</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"> <a href="aboutus.html"> <b>About Us</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"> <a href="glowfish.html"> <b>Glo Fish</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"><a href="angelfish.html"> <b>Angel Fish</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"><a href="platty.html"> <b>Platy Fish</b></a></li>
-                <li style="float: left; display: block; padding: 16px;"><a href="contactus.html"> <b>Contact Us</b></a></li>
-            </ul>
-        </div>
-        <div>
+        <div class="navigation">
             <header>
-                <h1>
-                    Here to Help!
-                </h1>
-            </header>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="glowfish.html">Glo Fish</a>
+            <a href="angelfish.html">Angel Fish</a>
+            <a href="platty.html">Platy Fish</a>
+            <a href="contactus.html">Contact Us</a>
+        </header>
+        </div>
+    
+        <div>
+             <h1 class="heading1">Here To Help!</h1>
         </div>
     <hr>
-    <div>
-        <address>
-            <u><b>For any enquiry</b></u> <br>
-            <b>Email:</b><a href="mailto:123@example.com">123@example.com</a> <br>
-            <b>Mail:</b>29 Alice Land <br>
+
+    <div class="bkgrnd">
+        <address >
+            <p><strong>For any enquiry</strong> <br>
+            <strong>Email:</strong><a href="mailto:123@example.com">123@example.com</a><br>
+            <strong>Mail Address:</strong>29 Alice Land <br>
             PO Box 2312, Wonderland <br>
             Canada
+        </p> 
         </address>
     </div>
-    <br>
+
     <div>
         <h2>Feedback and Query Form</h2>
             <p>You can provide the suggestions and post the queries by submitting the form below</p>
+            <p><strong>Note:</strong>Fields marked with <strong>*</strong> are mandatory field.</p>
                 <form>
                     <fieldset>
-                        <legend style="text-align: center;"> <b>Personal Details</b></legend>
-                        <label for="fname"> <b>First Name:*</b></label><br>
-                        <input type="text" id="fname" name="fname" required autofocus minlength="5" size="25"><br>
-                        <label for="lname"> <b>Last Name:*</b></label><br>
-                        <input type="text" id="lname" name="lname" required minlength="4" size="25"><br>
-                        <label for="email"> <b>Email:</b></label> <br>
-                        <input type="email" id="email" name="email" size="25"><br>
-                        <label for="phone"> <b>Telephone:</b></label> <br>
-                        <input type="tel" id="phone" name="phone" placeholder="123-456-4125" pattern="[0-9] {3}-[0-9]{3}-[0-9]{4}" size="10"><br>
+                        <legend> Personal Details</legend>
+                        <label for="fname">First Name:*</label>
+                        <input type="text" id="fname" name="fname" required autofocus minlength="5" size="25">
+                        <label for="lname">Last Name:*</label>
+                        <input type="text" id="lname" name="lname" required minlength="4" size="25">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size="25">
+                        <label for="phone">Telephone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-4125" pattern="[0-9] {3}-[0-9]{3}-[0-9]{4}" size="10">
                     </fieldset>
+                    
                     <fieldset>
-                        <legend style="text-align:center ;"><b>Suggestion and Query Details</b></legend>
-                        <label for="category"> <b>Category:</b></label><br>
+                        <legend>Suggestion and Query Details</legend>
+                        <label for="category" class="break">Category:</label>
                         <input type="checkbox" id="suggestion" name="suggestion" value="Suggestion">
-                        <label for="suggestion"> Suggestion </label> <br>
+                        <label for="suggestion">Suggestion </label>
                         <input type="checkbox" id="query" name="query" value="Query">
-                        <label for="query"> Query</label><br><br>
-                        <label for="suggestiontype"> <b>Do you want to see information on</b> (select multiple if applicable):</label>
-                        <input list="suggestiontype" name="suggestiontype">
-                        <datalist id="suggestiontype" >
-                        <!--<select id="suggestiontype" name="suggestiontype" size="2" multiple>-->
-                            <option value="Guppies">
-                            <option value="Goldfish"> 
-                            <option value="Mollies"> 
-                            <option value="Tetras"> 
-                            <option value="Others">
-                            </datalist>
-                        <!--</select>--><br><br>
-                        <label for="comment"><b>Please provide your suggestion/query in the textbox below:</b></label><br>
-                            <textarea name="comment" rows="6" cols="30" placeholder="Please provide your query/suggestion here."></textarea>
-                        <br><br>
-                        <label for="file"><b>Upload the image if you are not sure of the name/species of the fish:</b></label>
-                        <input type="file" name="file" id="file"><br><br>
-                        <label for="recommend"> <b>Will you recommend the site to your friends?</b></label><br>
+                        <label for="query">Query</label>
+                        <label for="suggestiontype" class="break">Do you want to see information on (select multiple if applicable):</label>
+                        <select id="suggestiontype" name="suggestiontype">
+                            <option value="Guppies">Guppies</option>
+                            <option value="Goldfish">Goldfish</option>
+                            <option value="Mollies">Mollies</option>
+                            <option value="Tetras">Tetras</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <label for="comment" class="break">Please provide your suggestion/query in the textbox below:</label>
+                            <textarea name="comment" id="comment" rows="6" cols="30">Provide your suggestion here</textarea>
+                        <label for="fishimage" class="break">Upload the image if you are not sure of the name/species of the fish:</label>
+                        <input type="file" name="fishimage" id="fishimage" class="foc" title="Please click the button to upload the file">
+                        
+
+                        <label for="recommend" class="break">Will you recommend the site to your friends?</label>
                             <select id="recommend" name="recommend" required>
                                 <option value="maybe">Maybe</option>
                                 <option value="yes" selected>Yes</option>
                                 <option value="no"> No</option>
-                            </select><br><br>
+                            </select>
 
-                        <label for="submissiondate"><b>Provide today's date:</b></label><br>
-                        <input type="date" name="submissiondate" id="submissiondate" min="today's date"><br><br>
-                        <button type="button" onclick="alert('Thank you for submitting your query/suggestion. Our team with contact you shortly!')">Submit</button>
-                        <input type="reset">
-                        <button type="button" onclick="alert('Are you sure that you want to cancel?')">Cancel</button><br>
+                        <label for="submissiondate" class="break">Form submission date (Format:yyyy-mm-dd):</label>
+                        <input type="date" name="submissiondate" id="submissiondate" min="today's date" title="yyyy-mm-dd">
                         <!--<input type="button" value="Cancel"><br>-->
+                        <div class="button">
+                            <button type="button" onclick="alert('Thank you for submitting your query/suggestion. Our team with contact you shortly!')">Submit</button>
+                                <input type="reset">
+                                <button type="button" onclick="alert('Are you sure that you want to cancel?')">Cancel</button>
+                            </div>
                     </fieldset>
-                </form>
+                    
+                    </form>
         </div>
         <div>
             <section>
-                <a href="platty.html" style="text-decoration: gray;">Previous Page</a>
-                <a href="index.html" style="color: rgb(76, 112, 21); float: right;">Home Page</a>
+                <span class="buttonnav"><a href="platty.html">Previous Page</span></a>
+                <span class="buttonnav1"><a href="index.html">Home Page</span></a>
             </section>
         </div>
         <div>  
             <footer>
-                <p> <b>Copyright (C), 2022-2023, <i>All rights reserved.</i></b></p>
+                <p>Copyright (C), 2022-2023, <em>All rights reserved.</em></p>
             </footer>
         </div>
         </body>
