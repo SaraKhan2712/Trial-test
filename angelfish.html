@@ -7,6 +7,7 @@
     <!--<meta http-equiv="refresh" content="10">-->
     <title>Angel Fish</title>
     <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="icon" type="img/x-ixon" href="/img/favicon.ico">
 </head>
 
 <body>
@@ -21,16 +22,18 @@
     </header>
     </div>
 <main>
-    <h1 class="heading1">Why are they called <q>Angel Fish</q>?</h1>
-    <div class="angel">
+    <h1 class="heading1 caps">Why are they called <q>Angel Fish</q>?</h1>
+    <hr>
+    <div class="clearfix angel">
+    <article>
     <!--<figure ALIGN="left">-->
         <img src="angelfish1.JPG"  title="angelfish">
-    <article><p>It is believed that angel fish got their name <strong>because of their shape</strong> - their fins appearing like angel wings and when turned head-down, have a silhouette of an angel.</p>
+    <p>It is believed that angel fish got their name <strong>because of their shape</strong> - their fins appearing like angel wings and when turned head-down, have a silhouette of an angel.</p>
         <p>Additionally, some of the species have shimmering scales that reflect the light beautifully when observed on a dive</p>
     <p>Does that sound ineteresting to you?</p>
     </article>
-</div>
-
+    </div>
+  
 <div>
     <h2>Some Interesting facts</h2>
     <ol>
@@ -57,21 +60,27 @@
 </div>-->
 <div>
     <h2>
-    Trivia Time
+    Knowledge Test
     </h2>
         <form>
         <fieldset style="border: 2px solid black;">
         <legend style="text-align: center; ">Quiz</legend>
         <label for="length">1. How long the fish grow?</label>
-        <input type="text" id="length" name="length"> <br>
+        <input type="text" id="length" name="length">
+        <div class="pl">Check answer
+            <p class="pll">10 Inches long</p>
+        </div>
 
         <label>2. Are angelfish herbivore?</label><br>
-            <input type="radio" id="yes" name="ques2" value="Yes">
+            <input type="radio" id="yes" name="ques2" value="Yes" class="mar1">
             <label for="yes">Yes</label><br>
-            <input type="radio" id="no" name="ques2" value="No">
+            <input type="radio" id="no" name="ques2" value="No" class="mar1">
             <label for="no">No</label><br>
-            <input type="radio" id="maybe" name="ques2" value="maybe">
+            <input type="radio" id="maybe" name="ques2" value="maybe" class="mar1">
             <label for="maybe">Maybe</label>
+            <div class="pl">Check answer
+                <p class="pll">No, they are omnivores</p>
+            </div>
         </fieldset>
         <div class="button">
         <input type="submit" value="Submit">
