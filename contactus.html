@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contact Us </title>
-    <link rel="icon" type="images/x-ixon" href="/images/favicon.ico">
+    <link rel="icon" type="img/x-ixon" href="/img/favicon.ico">
     <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
     <body>
@@ -20,7 +22,7 @@
         </div>
     
         <div>
-             <h1 class="heading1">Here To Help!</h1>
+             <h1 class="heading1 caps">Here To Help!</h1>
         </div>
     <hr>
 
@@ -36,12 +38,17 @@
     </div>
 
     <div>
-        <h2>Feedback and Query Form</h2>
+        <h2>Feedback and Query Form <i class="material-icons">feeddback</i></h2>
             <p>You can provide the suggestions and post the queries by submitting the form below</p>
-            <p><strong>Note:</strong>Fields marked with <strong>*</strong> are mandatory field.</p>
+            <p><strong>Note:</strong></p>
+            <ul style="margin-top: 10px;">
+                <li>Fields marked with <strong>*</strong> are mandatory.</li>
+                <li>Telephone should be entered in the format xxx-xxx-xxxx where first 3 digits are area code</li>
+                <li>Form submission date should be in format <strong>yyyy-mm-dd</strong></li>
+            </ul>
                 <form>
                     <fieldset>
-                        <legend> Personal Details</legend>
+                        <legend class="caps"> Personal Details</legend>
                         <label for="fname">First Name:*</label>
                         <input type="text" id="fname" name="fname" required autofocus minlength="5" size="25">
                         <label for="lname">Last Name:*</label>
@@ -53,12 +60,12 @@
                     </fieldset>
                     
                     <fieldset>
-                        <legend>Suggestion and Query Details</legend>
+                        <legend class="caps">Suggestion and Query Details</legend>
                         <label for="category" class="break">Category:</label>
-                        <input type="checkbox" id="suggestion" name="suggestion" value="Suggestion">
+                        <input type="checkbox" id="suggestion" name="suggestion" value="Suggestion" class="point">
                         <label for="suggestion">Suggestion </label>
-                        <input type="checkbox" id="query" name="query" value="Query">
-                        <label for="query">Query</label>
+                        <input type="checkbox" id="query" name="query" value="Query" class="point">
+                        <label for="query" class="point">Query</label>
                         <label for="suggestiontype" class="break">Do you want to see information on (select multiple if applicable):</label>
                         <select id="suggestiontype" name="suggestiontype">
                             <option value="Guppies">Guppies</option>
@@ -70,7 +77,7 @@
                         <label for="comment" class="break">Please provide your suggestion/query in the textbox below:</label>
                             <textarea name="comment" id="comment" rows="6" cols="30">Provide your suggestion here</textarea>
                         <label for="fishimage" class="break">Upload the image if you are not sure of the name/species of the fish:</label>
-                        <input type="file" name="fishimage" id="fishimage" class="foc" title="Please click the button to upload the file">
+                        <input type="file" name="fishimage" id="fishimage" class="foc point" title="Please click the button to upload the file">
                         
 
                         <label for="recommend" class="break">Will you recommend the site to your friends?</label>

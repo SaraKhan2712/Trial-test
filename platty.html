@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platy Fish</title>
     <link href="styles/style.css" rel="stylesheet"/>
-    <link rel="icon" type="images/x-ixon" href="/images/favicon.ico">
+    <link rel="icon" type="img/x-ixon" href="/img/favicon.ico">
     </head>
 
-<body>
+<body >
     <div class="container">
     <div class="navigation">
         <header>
@@ -24,12 +24,15 @@
     <main>
 
     <div>
-        <h1 class="heading1"> Some Interesting Facts About Platy Fish</h1>
+        <h1 class="heading1 caps"> Some Interesting Facts About Platy Fish</h1>
+    <hr>
     </div>
 
-    <div class="angel">
-            <img src="platyfish.jfif" alt="Two golden platy fish playing" title="platy fish" >
-                <article class="particle">
+    <div class="color">
+            <img src="platyfish.jfif" alt="Two golden platy fish playing" title="platy fish" class="platyimg">
+    </div>
+    <div class="flex-container">    
+            <article class="box">
                     <ol>
                         <li>Often <strong>red</strong>; other types include black, tuxedo and sunset platyfish</li>
                         <li>About 1.5 to 2.5 inches long</li>
@@ -42,7 +45,7 @@
                     <p>Do you want to learn more? <a href="https://www.aquariumcoop.com/blogs/aquarium/platy-care-guide" target="_blank">Click here</a></p>
                 </article>
 
-            <aside class="paside">
+            <aside class="box">
                 <h3>Further information can be found on:</h3>
                 <ul>
                     <li><a href="https://www.aquariumcoop.com/blogs/aquarium/platy-care-guide">Care Guide for platy fish</a></li>
@@ -54,27 +57,31 @@
     
     <div>
         <h2 class="trivia">
-            Trivia Time
+            Fun Time
         </h2>
             <form>
                 <fieldset>
                 <legend>Quiz</legend>
                <label>1. Do you think that platy need some salt?</label><BR>
                     
-                        <input type="radio" id="yes" name="ques1" value="Yes">
+                        <input type="radio" id="yes" name="ques1" value="Yes" class="mar1">
                         <label for="yes">Yes</label><br>
-                        <input type="radio" id="no" name="ques1" value="No">
+                        <input type="radio" id="no" name="ques1" value="No" class="mar1">
                         <label for="no">No</label><br>
-
+                        <div class="pl">Check answer
+                            <p class="pll">Yes</p>
+                        </div>
                 <label>2. Are these fish compatible with other fishes?</label><br>
                     
-                        <input type="radio" id="ques2" name="ques2" value="Yes">
+                        <input type="radio" id="ques2" name="ques2" value="Yes" class="mar1">
                         <label for="ques2">Yes</label><br>
-                        <input type="radio" id="ques22" name="ques22" value="No">
+                        <input type="radio" id="ques22" name="ques22" value="No" class="mar1">
                         <label for="ques22">No</label><br>
-                        <input type="radio" id="maybe" name="ques2" value="maybe">
+                        <input type="radio" id="maybe" name="ques2" value="maybe" class="mar1">
                         <label for="maybe">Maybe</label>
-                             
+                        <div class="pl">Check answer
+                            <p class="pll">No</p>
+                        </div>   
                     </fieldset>
                     <div class="button">
                     <input type="submit" value="Submit">
