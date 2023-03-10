@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contact Us </title>
-    <link rel="icon" type="img/x-ixon" href="/img/favicon.ico">
+    <link rel="icon" type="image/JPG" href="/fav.JPG" sizes="16x16">
     <link href="styles/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
     <body>
         <div class="navigation">
-            <header>
-            <a href="index.html">Home</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="glowfish.html">Glo Fish</a>
-            <a href="angelfish.html">Angel Fish</a>
-            <a href="platty.html">Platy Fish</a>
-            <a href="contactus.html">Contact Us</a>
-        </header>
+            <header  class="menu">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="glowfish.html">GLO FISH</a></li>
+                    <li><a href="angelfish.html">ANGEL FISH</a></li>
+                    <li><a href="platty.html">PLATY FISH</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>               
+            </header>
         </div>
     
         <div>
-             <h1 class="heading1 caps">Here To Help!</h1>
+             <h1 class="heading1 caps" >Here To Help!</h1>
         </div>
     <hr>
 
@@ -42,30 +45,39 @@
             <p>You can provide the suggestions and post the queries by submitting the form below</p>
             <p><strong>Note:</strong></p>
             <ul style="margin-top: 10px;">
-                <li>Fields marked with <strong>*</strong> are mandatory.</li>
+                <li>Fields marked with <span class="aestrik">*</span> are mandatory.</li>
                 <li>Telephone should be entered in the format xxx-xxx-xxxx where first 3 digits are area code</li>
-                <li>Form submission date should be in format <strong>yyyy-mm-dd</strong></li>
-            </ul>
-                <form>
+                <li>Form submission date should be in format <strong>mm/dd/yyyy</strong></li>
+                </ul>
+                <p id="errorFname"></p>
+                <p id="errorLname"></p>
+                <p id="errorSuggest"></p>
+                <p id="errorRobot"></p>
+                <form onsubmit="return print1()" action="index.html" id="frm">
                     <fieldset>
                         <legend class="caps"> Personal Details</legend>
                         <label for="fname">First Name:*</label>
-                        <input type="text" id="fname" name="fname" required autofocus minlength="5" size="25">
+                        <input type="text" id="fname" name="fname" class="break" autofocus id="fname" placeholder="John">
+                        
                         <label for="lname">Last Name:*</label>
-                        <input type="text" id="lname" name="lname" required minlength="4" size="25">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" size="25">
-                        <label for="phone">Telephone:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="123-456-4125" pattern="[0-9] {3}-[0-9]{3}-[0-9]{4}" size="10">
+                        <input type="text" id="lname" name="lname" class="break" id="lname" placeholder="Doe">
+                        <label for="email">Email:*<span class="help" title="We need the email address so that we can connect with you if we need more information on your suggest.">&#x3f;</span></label>
+                        <input type="email" id="email" name="email" size="25" class="break" placeholder="john.doe@testmail.com">
+                        
+                        <label for="phone">Telephone (XXX-XXX-XXXX):</label>
+                        <input type="tel" id="phone" name="phone" class="break" placeholder="123-456-4125" >
                     </fieldset>
                     
                     <fieldset>
                         <legend class="caps">Suggestion and Query Details</legend>
-                        <label for="category" class="break">Category:</label>
-                        <input type="checkbox" id="suggestion" name="suggestion" value="Suggestion" class="point">
+                       
+                        <div class="break bold1">Select the checkbox if you are providing suggestion or query
+                        <input type="checkbox" id="suggestion" name="suggesttype" value="suggestion" class="point">
                         <label for="suggestion">Suggestion </label>
-                        <input type="checkbox" id="query" name="query" value="Query" class="point">
+
+                        <input type="checkbox" id="query" name="suggesttype" value="query" class="point">
                         <label for="query" class="point">Query</label>
+                         </div>
                         <label for="suggestiontype" class="break">Do you want to see information on (select multiple if applicable):</label>
                         <select id="suggestiontype" name="suggestiontype">
                             <option value="Guppies">Guppies</option>
@@ -74,8 +86,8 @@
                             <option value="Tetras">Tetras</option>
                             <option value="Others">Others</option>
                         </select>
-                        <label for="comment" class="break">Please provide your suggestion/query in the textbox below:</label>
-                            <textarea name="comment" id="comment" rows="6" cols="30">Provide your suggestion here</textarea>
+                        <label for="comment" class="break">Please provide your suggestion/query in the textbox below:*</label>
+                            <textarea name="comment" id="comment" rows="7" cols="30" placeholder="Provide the suggestion here - min 30 characters required"></textarea>
                         <label for="fishimage" class="break">Upload the image if you are not sure of the name/species of the fish:</label>
                         <input type="file" name="fishimage" id="fishimage" class="foc point" title="Please click the button to upload the file">
                         
@@ -87,16 +99,20 @@
                                 <option value="no"> No</option>
                             </select>
 
-                        <label for="submissiondate" class="break">Form submission date (Format:yyyy-mm-dd):</label>
-                        <input type="date" name="submissiondate" id="submissiondate" min="today's date" title="yyyy-mm-dd">
+                        <label for="submissiondate" class="break">Form submission date (Format:mm/dd/yyyy):</label>
+                        <input type="date" name="todaysdate" id="submissiondate" title="Enter today's date" placeholder="Date(year, month, day)" pattern="\d{1,2}/\d{1,2}/\d{4}">
                         <!--<input type="button" value="Cancel"><br>-->
+                        <label for="print2" class="break">Do you want to print the form? Click the PRINT button:</label>
+                        <input type="button" id="print2" value="Print" title="Click the button to print" onclick=print()>
+                        <label for="robot" class="break">Robot Check:* 19+79= <span class="help" title="We need to check if you are a human">&#x3f;</span></label>
+                        <input type ="text" name="robot" id="robot">
+                            
                         <div class="button">
-                            <button type="button" onclick="alert('Thank you for submitting your query/suggestion. Our team with contact you shortly!')">Submit</button>
-                                <input type="reset">
+                            <button type="submit" id="submit">Submit</button>
+                                <input type="reset" value="Reset">
                                 <button type="button" onclick="alert('Are you sure that you want to cancel?')">Cancel</button>
-                            </div>
+                        </div>                                                   
                     </fieldset>
-                    
                     </form>
         </div>
         <div>
@@ -105,6 +121,10 @@
                 <span class="buttonnav1"><a href="index.html">Home Page</span></a>
             </section>
         </div>
+        <div>
+            <p id="time"></p>
+            </div>
+        <script src="contact.js" type="text/JavaScript"></script>
         <div>  
             <footer>
                 <p>Copyright (C), 2022-2023, <em>All rights reserved.</em></p>

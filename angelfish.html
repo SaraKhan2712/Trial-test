@@ -7,19 +7,23 @@
     <!--<meta http-equiv="refresh" content="10">-->
     <title>Angel Fish</title>
     <link href="styles/style.css" rel="stylesheet"/>
-    <link rel="icon" type="img/x-ixon" href="/img/favicon.ico">
+    <link rel="icon" type="image/JPG" href="/fav.JPG" sizes="16x16">
 </head>
 
 <body>
+
     <div class="navigation">
-        <header>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="glowfish.html">Glo Fish</a>
-        <a href="angelfish.html">Angel Fish</a>
-        <a href="platty.html">Platy Fish</a>
-        <a href="contactus.html">Contact Us</a>
-    </header>
+        <header  class="menu">
+            <ul>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="glowfish.html">GLO FISH</a></li>
+                <li><a href="angelfish.html">ANGEL FISH</a></li>
+                <li><a href="platty.html">PLATY FISH</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>               
+        </header>
     </div>
 <main>
     <h1 class="heading1 caps">Why are they called <q>Angel Fish</q>?</h1>
@@ -27,7 +31,7 @@
     <div class="clearfix angel">
     <article>
     <!--<figure ALIGN="left">-->
-        <img src="angelfish1.JPG"  title="angelfish">
+        <img src="angelfish1.JPG"  title="angelfish" id="angelfish" alt="Angel fish">
     <p>It is believed that angel fish got their name <strong>because of their shape</strong> - their fins appearing like angel wings and when turned head-down, have a silhouette of an angel.</p>
         <p>Additionally, some of the species have shimmering scales that reflect the light beautifully when observed on a dive</p>
     <p>Does that sound ineteresting to you?</p>
@@ -36,21 +40,22 @@
   
 <div>
     <h2>Some Interesting facts</h2>
-    <ol>
-        <li><strong>Freshwater Angelfish Are Members of the Cichlid Family</strong></li>
-        <p>Angelfish are freshwater members of the cichlid family, and they originate from South America. This group includes other popular fish, such as Oscars, Jack Dempseys, parrotfish, and discus.</p>
-        <li><strong>Angelfish Are Omnivores</strong></li>
-        <p>What do angelfish eat? Angelfish will eat live foods and plants, so these omnivores need to be fed the right foods to help them reach optimum size and remain healthy.</p>
-        <ul type="square">
+    <ul>
+        <li class="space"><strong>Freshwater Angelfish Are Members of the Cichlid Family</strong>
+        <span class="break">Angelfish are freshwater members of the cichlid family, and they originate from South America. This group includes other popular fish, such as Oscars, Jack Dempseys, parrotfish, and discus.</span></li>
+        <li class="space"><strong>Angelfish Are Omnivores</strong><span class="break">
+        Angelfish will eat live foods and plants, so these omnivores need to be fed the right foods to help them reach optimum size and remain healthy.</span>
+        <ul type="disc">
             <li>It's usually best to offer a daily feeding of flakes or a pelleted diet formulated for angels.</li>
             <li>Supplement the fish with live feedings of freshly hatched brine shrimp, bloodworms, and daphnia grown from your cultures to avoid contaminated sources.</li>
-        </ul><br>
-        <li><strong>Angelfish Can Grow to Nearly 10 Inches</strong></li>
-        <p>On average, well-cared for angelfish will reach about 6 inches at adulthood, which is about a year and a half old. If they're housed in very large tanks and are not overcrowded, they can reach nearly 10 inches, although this would be quite rare in captivity.</p>
-        <li><strong>They Are Best Kept With Their Own Kind - they can be aggressive</strong></li>
-        <p>These fish are often thought of as community fish, meaning they can live with a variety of other tropical species.</p>
+        </ul>
+    </li>
+        <li class="space"><strong>Angelfish Can Grow to Nearly 10 Inches</strong>
+            <span class="break">On average, well-cared for angelfish will reach about 6 inches at adulthood, which is about a year and a half old. If they're housed in very large tanks and are not overcrowded, they can reach nearly 10 inches, although this would be quite rare in captivity. </span></li>
+        <li class="space"><strong>They Are Best Kept With Their Own Kind - they can be aggressive</strong>
+            <span class="break">These fish are often thought of as community fish, meaning they can live with a variety of other tropical species.</span></li>
         
-    </ol>
+    </ul>
 </div>
 <!--
 <div>
@@ -62,31 +67,39 @@
     <h2>
     Knowledge Test
     </h2>
+    <p><strong>Note:</strong></p>
+    <ul>
+        <li>Every question has a answer when the mouse is hovered on <strong>Check answer</strong></li>
+        <li>Please clear the previous value or refresh the page,if you want to play the quiz again</li>
+    </ul>
         <form>
         <fieldset style="border: 2px solid black;">
         <legend style="text-align: center; ">Quiz</legend>
-        <label for="length">1. How long the fish grow?</label>
-        <input type="text" id="length" name="length">
+        <div>
+        <label for="fishLen">1. How long the fish grow (in inches)?</label>
+        <input type="text" id="fishLen" name="fishLen">
+        <div>
+            <button type="submit" value="Submit" id="ques1">Submit</button>
+            
+        </div>
         <div class="pl">Check answer
             <p class="pll">10 Inches long</p>
         </div>
-
-        <label>2. Are angelfish herbivore?</label><br>
+    </div>
+        <label for="ques2">2. Are angelfish herbivore?</label><br>
             <input type="radio" id="yes" name="ques2" value="Yes" class="mar1">
             <label for="yes">Yes</label><br>
             <input type="radio" id="no" name="ques2" value="No" class="mar1">
             <label for="no">No</label><br>
             <input type="radio" id="maybe" name="ques2" value="maybe" class="mar1">
             <label for="maybe">Maybe</label>
+            <div>
+                <input type="submit" value="Submit" id="ques2">
+            </div>
             <div class="pl">Check answer
                 <p class="pll">No, they are omnivores</p>
             </div>
         </fieldset>
-        <div class="button">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear">
-        <input type="button" value="Cancel"> 
-        </div>
         </form>  
 </div>
 
@@ -96,7 +109,10 @@
         <span class="buttonnav1"><a href="platty.html">Next Page</span></a>
     </section>
 </div>
-
+<div>
+    <p id="time"></p>
+    </div>
+<script src="angel.js" type="text/JavaScript"></script>
 </main>
 
 <div>

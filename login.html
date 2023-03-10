@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="icon" type="img/x-ixon" href="/img/favicon.ico">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <header  class="menu">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="glowfish.html">GLO FISH</a></li>
+                    <li><a href="angelfish.html">ANGEL FISH</a></li>
+                    <li><a href="platty.html">PLATY FISH</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>               
+            </header>
+        </div>
+<main>
+    <div>
+        <h1 class="heading1 caps">Login</h1>
+   </div>
+<hr>
+
+<div>
+           <form action="index.html" onsubmit="return validate()" >
+               <fieldset>
+                   <legend class="caps"> Login Details</legend>
+                   <label for="uname">Username:*</label>
+                   <input type="text" id="uname" name="uname" autofocus placeholder="Enter the username" id="uname" >
+                   <label for="pass">Password:*</label>
+                   <input type="password" id="pass" name="pass"  placeholder="Enter the password" id="pass">
+                   <input type="checkbox" id="remember" name="remember" value="remember">
+                   <label for="remember"> Remember Me</label>
+                           
+               
+                   <div class="button">
+                       <button type="submit" value="Submit">Submit</button>
+                           <input type="reset" value="Reset">
+                           <button type="button" onclick="alert('Are you sure that you want to cancel?')">Cancel</button>
+                   </div>                                                   
+               </fieldset>
+               </form>
+   </div>
+<script src="login.js" type="text/JavaScript"></script>
+</main>
+<div>
+    <footer>
+        <p>Copyright (C), 2022-2023, <em>All rights reserved.</em></p>
+    </footer>
+</div>
+</div>
+</body>
+</html>

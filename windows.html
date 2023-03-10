@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="windows.css" rel="stylesheet"/>
+    <style>
+        .center{
+            text-align: center;
+            background-color: aqua;
+        }
+
+        .left{
+            text-align: left;
+            background-color: rgb(234, 153, 241);
+                    }
+
+        .right
+        {
+            text-align: right;
+            background-color: bisque;
+        }
+
+        .size{
+            font-size: 29px;
+        }
+
+        .democlass{
+            color: red;
+            background-color: aquamarine;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body onload="checkcookies()">
+    <h2>JS Learning</h2>
+    
+<div id="div1">
+    <p> Para1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <h2>Bubbling</h2>
+    <p id="para1" class="class1 class2 class3">Click me</p>
+    <p id="para3">Thank you</p>
+</div><br>
+
+    <button onclick="myBtn()" id="mybtn">Click me</button>
+
+<p id="date1"></p>
+<p>
+<div id="div2">
+    <h2>Capturing</h2>
+    <p id="para2" class="class1">Click me</p>
+</div><br>
+
+    <div id= "div3" onmouseover="mover(this)" onmouseout="mout(this)"  onmouseup="mup(this)" onmousedown="mdown(this)" style="background-color: Pink; width: fit-content; ">
+        Mouse Over
+
+    </div>
+
+        <button onclick="move()">Move Me!</button>
+    </p>
+        <div id="container">
+        <div id="animate"></div>
+        
+    </div>
+    
+    <iframe id="myFrame" src="/contactus.html" ></iframe>
+    <button onclick="myFunction1()">Check Contact Us</button>
+    <button onclick="button()">Click Me</button>
+    <h1>Creating class Attribute using methods</h1>
+    <h2 class="heading"> Windows DOM Manipulation</h2>
+    <p> Go to <a id="test">Google.com</a></p>
+    <button onclick="myFunction()">Add Attribute</button>
+    <a href="index.html"> Index Page</a>
+    <a href="glowfish.html">Glowfish</a><br>
+    <img src="GloFish1.JPG" title="Glowfish" id="glo" alt="Glofish" style="height: 200px; max-width: 500px; display: left;">
+    <br>
+    <p>The number of anchors in the page are: <span id ="demo">COLORFUL</span></p>
+    <br>
+    <img src="platyfish.jfif" alt="platy fish" title="platy" id="platy"><br>
+    <ul id="myList">My List
+    <li>Pineapple</li>
+    <li>Guava</li>
+</ul>
+<!--This is a comment-->
+    <input type="text" value="textfield">
+    <button> Click</button>
+    <div class="container">
+        <div class ="center size">This is section 1</div>
+        <div class="left right">This is section 2</div>
+        <div class="right">This is section 3</div>
+        <div class="left right">This is section 4</div>
+        <div class="center">This is section 5</div>
+    </div>
+    <br>
+    <form id="form1">
+        <fieldset>
+            <legend>LOGIN </legend>
+        <label for="username" id="username">Username:</label>
+        <input type="text" name="username" value="username" id="fname" onchange="upperCase()"> <br><br>
+        
+        
+        <label for="password" id="password">Password:</label>
+        <input type="password" name="password" value="eg: Abcd1234$$">
+        <input type="submit" value="Submmit" onclick="mfunc()">
+    </fieldset>
+    </form>
+
+    Cats:
+    <input name ="pet" type="checkbox" value="cats" style="background-color: rgb(107, 107, 175) ;">
+    Dogs:
+    <input name ="pet" type="checkbox" value="dogs">
+    Hamster:
+    <input name ="pet" type="checkbox" value="hamster">
+    <p id="t1">The number of form elements are: </p>
+    <script src="windows.js" type="text/JavaScript"></script>
+</body>
+</html>
