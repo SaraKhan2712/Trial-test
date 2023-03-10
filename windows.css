@@ -1,0 +1,48 @@
+#container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: blueviolet;
+}
+
+#animate{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: blanchedalmond;
+}
+
+#div1, #div2{
+    background-color: orange;
+    height: 150px;
+   
+    
+}
+
+#para1, #para2{
+    height: 50px;
+    width:150px;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 20px;
+    font-weight: bold ;
+    
+}
+
+.class1{
+    background-color: rgb(107, 224, 224);
+    height: 200px;
+    width: 200px;
+}
+
+.class2{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+}
+
+.class3{
+    font-weight: bolder;
+    font-style: italic;
+    color: red;
+}
