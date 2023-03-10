@@ -8,7 +8,6 @@
     <link href="styles/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
-
     <body>
         <div class="navigation">
             <header  class="menu">
@@ -22,13 +21,11 @@
                     <li><a href="contactus.html">CONTACT US</a></li>
                 </ul>               
             </header>
-        </div>
-    
+        </div>    
         <div>
              <h1 class="heading1 caps" >Here To Help!</h1>
         </div>
     <hr>
-
     <div class="bkgrnd">
         <address >
             <p><strong>For any enquiry</strong> <br>
@@ -39,7 +36,6 @@
         </p> 
         </address>
     </div>
-
     <div>
         <h2>Feedback and Query Form <i class="material-icons">feeddback</i></h2>
             <p>You can provide the suggestions and post the queries by submitting the form below</p>
@@ -67,7 +63,6 @@
                         <label for="phone">Telephone (XXX-XXX-XXXX):</label>
                         <input type="tel" id="phone" name="phone" class="break" placeholder="123-456-4125" >
                     </fieldset>
-                    
                     <fieldset>
                         <legend class="caps">Suggestion and Query Details</legend>
                        
@@ -90,17 +85,16 @@
                             <textarea name="comment" id="comment" rows="7" cols="30" placeholder="Provide the suggestion here - min 30 characters required"></textarea>
                         <label for="fishimage" class="break">Upload the image if you are not sure of the name/species of the fish:</label>
                         <input type="file" name="fishimage" id="fishimage" class="foc point" title="Please click the button to upload the file">
-                        
-
                         <label for="recommend" class="break">Will you recommend the site to your friends?</label>
-                            <select id="recommend" name="recommend" required>
+                            <select id="recommend" name="recommend" >
+                                <option value="blank" selected>None
+                                </option>
                                 <option value="maybe">Maybe</option>
-                                <option value="yes" selected>Yes</option>
+                                <option value="yes" >Yes</option>
                                 <option value="no"> No</option>
                             </select>
-
                         <label for="submissiondate" class="break">Form submission date (Format:mm/dd/yyyy):</label>
-                        <input type="date" name="todaysdate" id="submissiondate" title="Enter today's date" placeholder="Date(year, month, day)" pattern="\d{1,2}/\d{1,2}/\d{4}">
+                        <input type="date" name="todaysdate" id="submissiondate" title="Enter today's date">
                         <!--<input type="button" value="Cancel"><br>-->
                         <label for="print2" class="break">Do you want to print the form? Click the PRINT button:</label>
                         <input type="button" id="print2" value="Print" title="Click the button to print" onclick=print()>
@@ -116,15 +110,14 @@
                     </form>
         </div>
         <div>
-            <section>
                 <span class="buttonnav"><a href="platty.html">Previous Page</span></a>
                 <span class="buttonnav1"><a href="index.html">Home Page</span></a>
-            </section>
+
         </div>
         <div>
             <p id="time"></p>
             </div>
-        <script src="contact.js" type="text/JavaScript"></script>
+        <script src="contact.js"></script>
         <div>  
             <footer>
                 <p>Copyright (C), 2022-2023, <em>All rights reserved.</em></p>
