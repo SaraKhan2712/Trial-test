@@ -2,7 +2,8 @@ html
 {
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
-   
+
+    
 }
 body{
     background-color: aliceblue;
@@ -14,7 +15,21 @@ body{
     box-sizing: border-box;
 }
 
+/*****************skip link***********************************/
+.skiplink{
+    position: absolute;
+    
+    left: 0;
+    padding: 8px;
+    color: rgb(17, 0, 255);
+        z-index: 100;
+}
 
+
+.skiplink :focus{
+    top: 80px;
+    color: black;
+}
 
 
 
@@ -158,6 +173,7 @@ p{
 {
     background-color: aqua;
     font-size: larger;
+    
 }
 
 
@@ -183,10 +199,11 @@ padding: 10px 10px;
 
 }
 
-.navigation a:hover
+.navigation a:hover, .navigation a:focus, .navigation1 a:hover, .navigation1 a:focus
 {
     background-color: aqua;
     color: black;
+    text-decoration: underline;
    /* padding: 10px 10px;*/
 }
 
@@ -223,24 +240,18 @@ text-decoration: none;
 margin-left: 20px;
 color: black;
 margin-right: 60px;
-font-size: 18px;
-
+font-size: 1.2em;
+padding-top: 5px;
+padding-bottom: 5px;
 }
 
 .navigation1{
 overflow: hidden;
 background-color: rgb(202, 202, 214);
 padding-bottom: 20px;
-
 }
 
-.navigation1 a:hover
-{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
 
-}
 /* style the about us image*/
 .author{
     margin-top: 8px;
@@ -408,12 +419,10 @@ label{
 
 /*Botttom left button navigation*/
 .buttonnav a:link{
-    background-color: rgb(190, 241, 204);
     color: rgb(0, 0, 0);
     padding: 8px 8px;
     margin-left: 20px;
     margin-bottom: 100px;
-    border: 2px solid green;
     margin-top: 50px;
     float: left;
    }
@@ -423,15 +432,12 @@ label{
    }
 /*Botttom right button navigation*/
 .buttonnav1 a:link{
-    background-color: rgb(190, 241, 204);
     color: rgb(0, 0, 0);
     padding: 8px 8px;
     float: right;
     margin-bottom: 100px;
     margin-top: 50px;
-    margin-right: 20px;
-    border: 2px solid green;
-     
+    margin-right: 20px;     
 }
 
 /**** For the footer of the pages*****/
@@ -547,3 +553,4 @@ div.pl:hover p{
 .space{
     margin: 10px;
 }
+
