@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
+        <a href="#maincontent"  class="skiplink">Skip to Main Content</a>   
         <div class="navigation">
             <header  class="menu">
                 <ul>
@@ -23,7 +24,7 @@
             </header>
         </div>    
         <div>
-             <h1 class="heading1 caps" >Here To Help!</h1>
+             <h1 class="heading1 caps" id="maincontent" >Here To Help!</h1>
         </div>
     <hr>
     <div class="bkgrnd">
@@ -57,11 +58,12 @@
                         
                         <label for="lname">Last Name:*</label>
                         <input type="text" id="lname" name="lname" class="break" id="lname" placeholder="Doe">
-                        <label for="email">Email:*<span class="help" title="We need the email address so that we can connect with you if we need more information on your suggest.">&#x3f;</span></label>
+                        <label for="email">Email:*</label>
                         <input type="email" id="email" name="email" size="25" class="break" placeholder="john.doe@testmail.com">
                         
                         <label for="phone">Telephone (XXX-XXX-XXXX):</label>
-                        <input type="tel" id="phone" name="phone" class="break" placeholder="123-456-4125" >
+                        <input type="tel" id="phone" name="phone" class="break" aria-describedby="phone-help" >
+                        <div id="phone-help" hidden>Telephone should be in the format xxx-xxx-xxxx where x is a digit</div>
                     </fieldset>
                     <fieldset>
                         <legend class="caps">Suggestion and Query Details</legend>
@@ -98,12 +100,13 @@
                         <!--<input type="button" value="Cancel"><br>-->
                         <label for="print2" class="break">Do you want to print the form? Click the PRINT button:</label>
                         <input type="button" id="print2" value="Print" title="Click the button to print" onclick=print()>
-                        <label for="robot" class="break">Robot Check:* 19+79= <span class="help" title="We need to check if you are a human">&#x3f;</span></label>
+                        <label for="robot" class="break">Robot Check:* 19+79=                        
+                        </label>
                         <input type ="text" name="robot" id="robot">
                             
                         <div class="button">
                             <button type="submit" id="submit">Submit</button>
-                                <input type="reset" value="Reset">
+                                <button type="reset" value="Reset">Reset</button>
                                 <button type="button" onclick="alert('Are you sure that you want to cancel?')">Cancel</button>
                         </div>                                                   
                     </fieldset>
@@ -125,3 +128,6 @@
         </div>
         </body>
     </html>
+
+
+   

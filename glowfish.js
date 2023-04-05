@@ -14,4 +14,6 @@ Image.onmouseover = () =>{
     }
 };
 
+document.getElementById('item1').focus();
+
 document.getElementById('time').innerHTML= "Last Modified: "+ document.lastModified;
