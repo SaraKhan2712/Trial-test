@@ -13,7 +13,7 @@
         <div class="navigation">
             <header  class="menu">
                 <ul>
-                    <li><a href="login.html">LOGIN</a></li>
+                    
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutus.html">ABOUT US</a></li>
                     <li><a href="glowfish.html">GLO FISH</a></li>
@@ -22,7 +22,8 @@
                     <li><a href="contactus.html">CONTACT US</a></li>
                 </ul>               
             </header>
-        </div>    
+        </div>  
+    <main>
         <div>
              <h1 class="heading1 caps" id="maincontent" >Here To Help!</h1>
         </div>
@@ -50,7 +51,7 @@
                 <p id="errorLname"></p>
                 <p id="errorSuggest"></p>
                 <p id="errorRobot"></p>
-                <form onsubmit="return print1()" action="index.html" id="frm">
+                <form onsubmit="return print1()" action="Querysubmit.html" id="frm">
                     <fieldset>
                         <legend class="caps"> Personal Details</legend>
                         <label for="fname">First Name:*</label>
@@ -99,7 +100,7 @@
                         <input type="date" name="todaysdate" id="submissiondate" title="Enter today's date">
                         <!--<input type="button" value="Cancel"><br>-->
                         <label for="print2" class="break">Do you want to print the form? Click the PRINT button:</label>
-                        <input type="button" id="print2" value="Print" title="Click the button to print" onclick=print()>
+                        <input type="button" id="print2" value="Print the form" title="Click the button to print" onclick=print()>
                         <label for="robot" class="break">Robot Check:* 19+79=                        
                         </label>
                         <input type ="text" name="robot" id="robot">
@@ -121,11 +122,12 @@
             <p id="time"></p>
             </div>
         <script src="contact.js"></script>
-        <div>  
+    </main>
             <footer>
-                <p>Copyright (C), 2022-2023, <em>All rights reserved.</em></p>
+                <div>
+                <p>Copyright (C) 2022-2023 <em>All rights reserved.</em></p>
+            </div>
             </footer>
-        </div>
         </body>
     </html>
 

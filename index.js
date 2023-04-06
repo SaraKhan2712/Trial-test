@@ -45,7 +45,7 @@ else
     myHeading.textContent= `Welcome back, ${storedName}! Keep Learning about fish...`;
 }
 
-document.getElementById('user').addEventListener('click', function()
+document.getElementById('user1').addEventListener('click', function()
 {
     welcome();
 });
