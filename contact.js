@@ -1,3 +1,16 @@
+var fname= document.getElementById('fname').value;
+sessionStorage.setItem("fname1", fname);
+
+var lname= document.getElementById('lname').value;
+sessionStorage.setItem("lname1", lname);
+var email= document.getElementById('email').value;
+sessionStorage.setItem("email1", email);
+var phone= document.getElementById('phone').value;
+sessionStorage.setItem("phone1", phone);
+var comment= document.getElementById('comment').value;
+sessionStorage.setItem("comment1", comment);
+
+
 function print1()
 {
     var fname= document.getElementById('fname').value;
@@ -29,7 +42,6 @@ function print1()
     }
     else 
     {
-        myFunction();
         return true;
     }
 }
@@ -63,7 +75,7 @@ function print1()
     }
 }
 */
-
+/*
 function myFunction()
 {
     var fname= document.getElementById('fname').value;
@@ -71,8 +83,16 @@ function myFunction()
     var email= document.getElementById('email').value;
     var phone= document.getElementById('phone').value;
     var comment= document.getElementById('comment').value;
-    const mywindow = window.open();
+    localStorage.setItem("fname1", fname);
+    localStorage.setItem("lname1", lname);
+    localStorage.setItem("email1", email);
+    localStorage.setItem("phone1", phone);
+    localStorage.setItem("comment1", comment);
+   
+    
+    /*const mywindow = window.open();
     mywindow.document.open();
+
     mywindow.document.title ="Thank You";
     mywindow.document.write("<b>Form Data Submitted</b><br>")
     mywindow.document.write("Thank you for you feedback/suggestion, <strong>"+fname + " " + lname+ "</strong>!<br> <br> Feedback received on "+ Date() +"<br><br> We value your inputs and our team will contact you shortly through email at <strong>"+ email+ "</strong>. <br><br> Have a great day!");
@@ -86,7 +106,7 @@ function myFunction()
     //mywindow.document.write(<a href="index.html">Home Page</a>);
     mywindow.document.close()
 
-}
+}*/
 
 
 function myFunction1()

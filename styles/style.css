@@ -534,15 +534,7 @@ div.pl:hover p{
 
 
 
-#user{
-    background-color: white;
-    width: fit-content;
-    color: black;
-    font-size: large;
-    text-align: right;
-    
-    text-decoration: underline;
-}
+
 
 /***********************Login page***********************/
 #remember{
