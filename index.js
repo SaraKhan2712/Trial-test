@@ -42,7 +42,7 @@ if(!localStorage.getItem("name"))
 else
 {
     const storedName = localStorage.getItem("name");
-    myHeading.textContent= `Welcome back, ${storedName}! Keep Learning about fish...`;
+    myHeading.textContent= `Welcome back, ${storedName}! Keep Learning about pet fish...`;
 }
 
 document.getElementById('user1').addEventListener('click', function()
