@@ -546,3 +546,9 @@ div.pl:hover p{
     margin: 10px;
 }
 
+/****************************Thank You *****************************/
+#thank{
+    line-height: 3em;
+    margin-left: 8px;  
+    padding: 0.5em;  
+}
