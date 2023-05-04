@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form check</title>
+</head>
+<body>
+    <section>
+        <h2>Error Validation</h2>
+    </section>
+    <div class="wb-frmvld">
+		<form action="#" method="get" id="validation-example">
+			<fieldset>
+				<legend>Contact information</legend>
+                <div class="form-group">
+					<label for="fname1" class="required"><span class="field-name">First name</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="fname1" name="fname1" type="text" autocomplete="given-name" required="required" data-rule-minlength="2" />
+				</div>
+                <div class="form-group">
+					<label for="lname1" class="required"><span class="field-name">Last name</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="lname1" name="lname1" type="text" autocomplete="family-name" required="required" data-rule-minlength="2" />
+				</div>
+                <div class="form-group">
+					<label for="tel1" class="required"><span class="field-name">Telephone number (including area code)</span> <strong class="required">(required)</strong></label>
+					<input class="form-control" id="tel1" name="tel1" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" />
+				</div>
+                <div class="form-group">
+					<label for="email1"><span class="field-name">Email address</span> (yourname@domain.com)</label>
+					<input class="form-control" id="email1" name="email1" type="email" autocomplete="email" required="required" data-rule-email="true" />
+				</div>
+                <input type="submit" value="Submit" class="btn btn-primary" /> <input type="reset" value="Reset page to defaults" class="btn btn-link btn-sm show p-0 mrgn-tp-md" />
+		</form>
+	</div>
+    <script src="formvalid.js"></script>
+</body>
+
+</html>
