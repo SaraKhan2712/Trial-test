@@ -9,7 +9,7 @@
     <link rel="icon" type="image/JPG" href="/fav.JPG" sizes="16x16">
     </head>
 <body >
-    <a href="#maincontent"  class="skiplink">Skip to Main Content</a>   
+    <a href="#maincontent"  class="skiplink navlink">Skip to Main Content</a>   
     <div class="container">
     <div class="navigation">
         <header  class="menu">
@@ -43,57 +43,97 @@
                         <li>Hardy</li>
                         <li>Peaceful, but not timid; do not bother any other fish in the tank</li>
                     </ul>
-                    <p>Do you want to learn more? If yes, read it on <a href="https://www.aquariumcoop.com/blogs/aquarium/platy-care-guide" target="_blank">Aquariumcoop - Platy Care Guide (opens in new window)</a></p>
+                    <p>Do you want to learn more? If yes, read it on <a class="mainlink" href="https://www.aquariumcoop.com/blogs/aquarium/platy-care-guide" target="_blank">Aquariumcoop - Platy Care Guide (opens in new window)</a></p>
                 </article>
             <aside class="box">
                 <h3>For Further information:</h3>
                 <ul>
-                    <li><a href="https://www.aquariumsource.com/platy-fish/" target="_blank">Platy Fish 101: Care, Types, Diet, Lifespan & More! (opens in new window)</a></li>
-                    <li>All about the information on: how to care, lifespan, food, tank mates and many more can be found on <a href="https://www.fishkeepingworld.com/platy-fish/" target="_blank">Fishkeeping World (opens in new window)</a></li>
-                    <li>Expert guide on care can be read on <a href="https://modestfish.com/platy-fish/" target="_blank">ModestFish (opens in new window)</a></li>
+                    <li><a class="mainlink" href="https://www.aquariumsource.com/platy-fish/" target="_blank">Platy Fish 101: Care, Types, Diet, Lifespan & More! (opens in new window)</a></li>
+                    <li>All about the information on: how to care, lifespan, food, tank mates and many more can be found on <a class="mainlink" href="https://www.fishkeepingworld.com/platy-fish/" target="_blank">Fishkeeping World (opens in new window)</a></li>
+                    <li>Expert guide on care can be read on <a class="mainlink" href="https://modestfish.com/platy-fish/" target="_blank">ModestFish (opens in new window)</a></li>
                 </ul>
             </aside>
     </div>
     <div>
         <h2 class="trivia">
-            Fun Time
+            Knowledge Test
         </h2>
             <form>
-                <fieldset>
-                <legend>Quiz</legend>
-               <label for="ques1">1. Do you think that platy need some salt?</label><br>
-                        <input type="radio" id="yes1" name="ques1" value="Yes" class="mar1">
-                        <label for="yes1">Yes</label><br>
-                        <input type="radio" id="no1" name="ques1" value="No" class="mar1">
-                        <label for="no1">No</label><br>
-                        <div>
-                            <input type="submit" value="Submit" id="ques1">
-                        </div>
+                    <fieldset class="field">
+                    <legend class="mainlegend">Quiz</legend>
+                        <fieldset class="qlegend">
+                            <legend >Do you think that platy need some salt?</legend>
+                            <div class="radio">
+                                <label for="yes1">
+                                    <input type="radio" id="yes1" name="ques1" value="Yes" class="mar1" data-rule-required="yes">
+                                    Yes 
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="no1">
+                                    <input type="radio" id="no1" name="ques1" value="No" class="mar1">
+                                    No
+                                </label>
+                            </div>
+                        <!--<input type="submit" value="Submit" id="ques1">-->                      
+                            <!--<button class="collapsible">Check Answer</button>
+                            <div class="content">
+                                <p>
+                                    The correct answwer is No. Platy fish do not need salt water. They are fresh water fish.
+                                </p>
+                            </div>
+                          
+                            <button class="collapsible">Check Answer2</button>
+                            <div class="content">
+                                <p>
+                                    The correct answwer is No. Platy fish are aggressive and prefer to stay in their own school/group.
+                                </p>
+                            </div>
                         <div class="pl">Check answer
                             <p class="pll">The correct answer is: Yes</p>
+                        </div>-->
+                    <fieldset class="qlegend">
+                        <legend >Are these fish compatible with other fishes?</legend>
+                        <div class="radio">
+                            <label for="ques2">
+                            <input type="radio" id="ques2" name="platy2" value="Yes"  data-rule-required="true">
+                             Yes</label>
                         </div>
-                <label for="platy2">2. Are these fish compatible with other fishes?</label><br>
-                        <input type="radio" id="ques2" name="platy2" value="Yes" class="mar1">
-                        <label for="ques2">Yes</label><br>
-                        <input type="radio" id="ques22" name="platy2" value="No" class="mar1">
-                        <label for="ques22">No</label><br>
-                        <input type="radio" id="maybe1" name="platy2" value="maybe" class="mar1">
-                        <label for="maybe1">Maybe</label>
-                        <div>
-                            <input type="submit" value="Submit" id="platy2">
-                        </div>
-                        <div class="pl">Check answer
-                            <p class="pll">The correct answer is: No</p>
-                        </div>   
+                        <div class="radio">
+                            <label for="ques22">
+                                <input type="radio" id="ques22" name="platy2" value="No" >
+                            No </label>
+                         </div>
+                         <div class="radio">
+                             <label for="maybe1">
+                                 <input type="radio" id="maybe1" name="platy2" value="maybe" >
+                                 Maybe</label>
+                         </div>         
+                     </fieldset>
+                             <!--<input type="submit" value="Submit" id="platy2">-->
+                   <button type="submit" value="Submit" id="quizs">Submit</button>
                     </fieldset>
                     </form> 
             </div>  
+            <section>
+                <h3>Answer to Quiz</h3>
+                <details class="answer1">
+                    <summary>Answer 1</summary>
+                    <p>No. Platy fish do not need salt water. They are fresh water fish.</span></p>
+                </details>
+            </section>
+               <section>
+                <details class="answer1">
+                    <summary>Answer 2</summary>
+                    <p >No. Platy fish are aggressive and prefer to stay in their own school/group.</span></p>
+                </details>
+            </section>   
         <!--<p>Have a sneak peek into how it looks</p>
         <iframe src="https://www.bing.com/videos/search?q=glow+fish+aquariums&&view=detail&mid=245B2A12F20B156B1E72245B2A12F20B156B1E72&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dglow%2Bfish%2Baquariums%26FORM%3DHDRSC4" frameborder="2" height="500px" width="100%"></iframe>-->
         
         <div>
-                <span class="buttonnav"><a href="angelfish.html">Previous Page</span></a>
-                <span class="buttonnav1"><a href="contactus.html">Next Page</span></a>
+                <span class="buttonnav"><a class="mainlink" href="angelfish.html" title="Previous Page">Angel Fish</span></a>
+                <span class="buttonnav1"><a class="mainlink" href="contactus.html" title="Next Page">Contact Us</span></a>
         </div> 
         <div>
             <p id='time'></p>

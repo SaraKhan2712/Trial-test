@@ -10,7 +10,7 @@
     <link rel="icon" type="image/JPG" href="/fav.JPG" sizes="16x16">
 </head>
 <body>
-    <a href="#maincontent"  class="skiplink">Skip to Main Content</a>   
+    <a href="#maincontent"  class="skiplink navlink">Skip to Main Content</a>   
     <div class="navigation">
         <header  class="menu">
             <ul>
@@ -29,7 +29,7 @@
     <hr>
     <div class="clearfix angel">
     <!--<figure ALIGN="left">-->
-        <img src="angelfish1.JPG"  title="angelfish" id="angelfish" alt="Angel fish">
+        <img src="angelfish1.JPG"  id="angelfish" alt="white angel fish">
     <p>It is believed that angel fish got their name <strong>because of their shape</strong> - their fins appearing like angel wings and when turned head-down, have a silhouette of an angel.</p>
         <p>Additionally, some of the species have shimmering scales that reflect the light beautifully when observed on a dive</p>
     <p>Does that sound ineteresting to you?</p>
@@ -68,38 +68,52 @@
         <li>Please clear the previous value or refresh the page,if you want to play the quiz again</li>
     </ul>
         <form>
-        <fieldset style="border: 2px solid black;">
-        <legend style="text-align: center; ">Quiz</legend>
+        <fieldset class="field">
+        <legend class="mainlegend">Quiz</legend>
         <div>
-        <label for="fishLen">1. How long the fish grow (in inches)?</label>
+        <label for="fishLen">How long the fish grow (in inches)?</label>
         <input type="text" id="fishLen" name="fishLen">
-        <div>
-            <button type="submit" value="Submit" id="ques1">Submit</button>
-            
         </div>
-        <div class="pl">Check answer
-            <p class="pll">10 Inches long</p>
-        </div>
-    </div>
-        <label for="ques2">2. Are angelfish herbivore?</label><br>
-            <input type="radio" id="yes" name="ques2" value="Yes" class="mar1">
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="no" name="ques2" value="No" class="mar1">
-            <label for="no">No</label><br>
-            <input type="radio" id="maybe" name="ques2" value="maybe" class="mar1">
-            <label for="maybe">Maybe</label>
-            <div>
-                <input type="submit" value="Submit" id="ques2">
+        
+       <fieldset class="qlegend">
+           <legend >Are angelfish herbivore?</legend>
+           <div class="radio">
+            <label for="yes">
+                <input type="radio" id="yes" name="ques2" value="Yes" class="mar1" data-rule-required="true">
+                Yes</label>
+           </div>
+           <div class="radio">
+            <label for="no">
+                <input type="radio" id="no" name="ques2" value="No" class="mar1">
+               No </label>
             </div>
-            <div class="pl">Check answer
-                <p class="pll">No, they are omnivores</p>
-            </div>
+            <div class="radio">
+                <label for="maybe">
+                    <input type="radio" id="maybe" name="ques2" value="maybe" class="mar1">
+                    Maybe</label>
+            </div>         
+        </fieldset>
+                <button type="submit" value="Submit" id="quizangel">Submit </button>       
+                
         </fieldset>
         </form>  
 </div>
+<section>
+    <h3>Answer to Quiz</h3>
+    <details class="answer1">
+        <summary>Answer 1</summary>
+        <p>Angel fish can be as long as 10 inches, if they are housed in very large tanks and are not overcrowded</span></p>
+    </details>
+</section>
+   <section>
+    <details class="answer1">
+        <summary>Answer 2</summary>
+        <p >No. Angel fish are omnivores as they eat live food and plants.</span></p>
+    </details>
+</section>   
 <div>
-        <span class="buttonnav"><a href="glowfish.html">Previous Page</span></a>
-        <span class="buttonnav1"><a href="platty.html">Next Page</span></a>
+        <span class="buttonnav"><a class="mainlink" href="glowfish.html" title="Previous Page">Glo Fish</span></a>
+        <span class="buttonnav1"><a class="mainlink" href="platty.html" title="Next Page">Platy Fish</span></a>
 </div>
 <div>
     <p id="time"></p>

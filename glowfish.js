@@ -1,5 +1,5 @@
 const  Image = document.querySelector("img");
-
+/*
 Image.onmouseover = () =>{
     const mySrc = Image.getAttribute("src");
     const newimage = document.getElementById('glo')
@@ -13,7 +13,7 @@ Image.onmouseover = () =>{
         Image.setAttribute("src", "GloFish1.jpg");
     }
 };
-
+*/
 document.getElementById('item1').focus();
 
 document.getElementById('time').innerHTML= "Last Modified: "+ document.lastModified;

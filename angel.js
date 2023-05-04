@@ -1,6 +1,6 @@
 
 
-const  Image1 = document.querySelector('img');
+/*const  Image1 = document.querySelector('img');
 
 Image1.onmouseover = () =>{
     const mySrc = Image1.getAttribute("src");
@@ -14,10 +14,38 @@ Image1.onmouseover = () =>{
     {
         Image1.setAttribute("src", "angelfish1.jpg");
     }
-};
+};*/
+
+document.getElementById("quizangel").addEventListener("click", answerAngel);
+function answerAngel()
+{
+    var x = document.getElementById('fishLen');
+    var l1 = document.getElementById('yes');
+    var l2 = document.getElementById('no');
+    var l3 = document.getElementById('maybe');
+    if (x.value==10 && l2.checked == true)
+    {
+        alert("Great Job! You have answered both questions correctly!."); 
+        
+    }
+    else if ((x.value==10) && ((l1.checked == true)||(l3.checked == true)))
+    {
+        alert("Almost there!. Answer 1 is correct and Answer 2 is wrong. Please try again.");
+    }
+    else if (x.value!=10 && l2.checked == true)
+    {
+        alert("Almost there!. Answer 1 is wrong and Answer 2 is correct. Please try again.");
+    }
+    else
+    {
+        alert("Sorry! You have answered both questions wrong. Please try again");
+    }
+}
 
 
 
+
+/*
 document.getElementById("ques1").addEventListener("click", answer1);
 function answer1()
 {
@@ -69,3 +97,4 @@ function answer2()
 }
 
 document.getElementById('time').innerHTML= "Last Modified: "+ document.lastModified;
+*/

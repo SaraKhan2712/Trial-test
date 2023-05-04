@@ -8,8 +8,8 @@
     <link href="styles/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
-    <body>
-        <a href="#maincontent"  class="skiplink">Skip to Main Content</a>   
+    <body class="contactbody">
+        <a href="#maincontent"  class="skiplink navlink">Skip to Main Content</a>   
         <div class="navigation">
             <header  class="menu">
                 <ul>
@@ -31,7 +31,7 @@
     <div class="bkgrnd">
         <address >
             <p><strong>For any enquiry</strong> <br>
-            <strong>Email:</strong><a href="mailto:123@example.com">123@example.com</a><br>
+            <strong>Email:</strong><a class="mainlink" href="mailto:123@example.com"> 123@example.com</a><br>
             <strong>Mail Address:</strong>29 Alice Land <br>
             PO Box 2312, Wonderland <br>
             Canada
@@ -39,59 +39,62 @@
         </address>
     </div>
     <div>
-        <h2>Feedback and Query Form <i class="material-icons">feeddback</i></h2>
+        <h2>Feedback and Query Form <!--<span class="material-icons">feeddback</span>--></h2>
             <p>You can provide the suggestions and post the queries by submitting the form below</p>
             <p><strong>Note:</strong></p>
             <ul style="margin-top: 10px;">
-                <li>Fields marked with <span class="aestrik">*</span> are mandatory.</li>
-                <li>Telephone should be entered in the format xxx-xxx-xxxx where first 3 digits are area code</li>
+                <li>Madatory fields are maked <strong>required</strong></li>
+                <li>Telephone should be 10 digits (xxxxxxxxxx where x represents digit)</li>
                 <li>Form submission date should be in format <strong>mm/dd/yyyy</strong></li>
+                <li>If there are any errors, the form will not be submitted</li>
                 </ul>
-                <p id="errorFname"></p>
-                <p id="errorLname"></p>
-                <p id="errorSuggest"></p>
-                <p id="errorRobot"></p>
-                <form onsubmit="return print1()" action="Querysubmit.html" id="frm">
-                    <fieldset>
-                        <legend class="caps"> Personal Details</legend>
-                        <label for="fname">First Name:*</label>
-                        <input type="text" id="fname" name="fname" class="break" autofocus id="fname" placeholder="John">
+                <div class="suggestion" >
+                <form  action="Querysubmit.html" id="frm">
+                    <div class="validationerrors"></div>                  
+                    <fieldset class="field">
+                        <legend class="caps mainlegend"> Personal Details</legend>
                         
-                        <label for="lname">Last Name:*</label>
-                        <input type="text" id="lname" name="lname" class="break" id="lname" placeholder="Doe">
-                        <label for="email">Email:*</label>
-                        <input type="email" id="email" name="email" size="25" class="break" placeholder="john.doe@testmail.com">
+                        <label for="fname"> First Name (minimum 2 characters) <span class="required">(required)</span><span id="efname" class="required"></span></label>
                         
-                        <label for="phone">Telephone (XXX-XXX-XXXX):</label>
-                        <input type="tel" id="phone" name="phone" class="break" aria-describedby="phone-help" >
-                        <div id="phone-help" hidden>Telephone should be in the format xxx-xxx-xxxx where x is a digit</div>
+                        <input type="text" id="fname" name="fname" class="break string" size="25" placeholder="John" data-msg="Please enter the valids first name (minimum 2 chars)" data-rule-lettersonly="true" data-rule-maxlength="25" >
+                        
+                        <label for="lname">Last Name (minimum 2 characters) <span class="required">(required)</span><span id="elname" class="required"></span></label>
+                        <input type="text" id="lname" name="lname" class="break string" id="lname" placeholder="Doe" maxlength="25" size="25" data-rule-lettersonly="true" data-rule-maxlength="25">
+                        <label for="email">Email Address <span class="required">(required)</span><span id="eemail" class="required "></span></label>
+                        <input type="email" id="email" name="email" size="25" class="break email" placeholder="john.doe@testmail.com" maxlength="25">
+                        
+                        <label for="phone">Telephone (10 digits) <span class="required">(required)</span><span id="ephone" class="required"></span></label>
+                        <input type="tel" id="phone" name="phone" class="break number" data-rule-phoneUS="true" maxlength="10" size="25" data-rule-minlength="10" >
+                        <div id="phone-help" hidden>Telephone should be in the format xxxxxxxxxx where x is a digit</div>
                     </fieldset>
-                    <fieldset>
-                        <legend class="caps">Suggestion and Query Details</legend>
-                       
-                        <div class="break bold1">Select the checkbox if you are providing suggestion or query
+                    <fieldset class="field">
+                        <legend class="caps mainlegend">Suggestion and Query Details</legend>
+                        <fieldset class="qlegend">
+                            <legend >Select the checkbox if you are providing suggestion or query</legend>
+                            <div >
                         <input type="checkbox" id="suggestion" name="suggesttype" value="suggestion" class="point">
                         <label for="suggestion">Suggestion </label>
-
+                        </div>
+                        <div >
                         <input type="checkbox" id="query" name="suggesttype" value="query" class="point">
                         <label for="query" class="point">Query</label>
                          </div>
                         <label for="suggestiontype" class="break">Do you want to see information on (select multiple if applicable):</label>
-                        <select id="suggestiontype" name="suggestiontype">
+                        <select id="suggestiontype" class="drop" name="suggestiontype">
+                            <option label="Select the Fish Type" selected></option>
                             <option value="Guppies">Guppies</option>
                             <option value="Goldfish">Goldfish</option>
                             <option value="Mollies">Mollies</option>
                             <option value="Tetras">Tetras</option>
                             <option value="Others">Others</option>
                         </select>
-                        <label for="comment" class="break">Please provide your suggestion/query in the textbox below:*</label>
-                            <textarea name="comment" id="comment" rows="7" cols="30" placeholder="Provide the suggestion here - min 30 characters required"></textarea>
+                        <label for="comment" class="break text">Please provide your suggestion/query in the textbox below:</label>
+                            <textarea name="comment" id="comment" rows="7" cols="30" placeholder="Provide the suggestion here" class="string" data-rule-minlength="30"></textarea>
                         <label for="fishimage" class="break">Upload the image if you are not sure of the name/species of the fish:</label>
-                        <input type="file" name="fishimage" id="fishimage" class="foc point" title="Please click the button to upload the file">
+                        <input type="file" name="fishimage" id="fishimage" class="foc point drop" title="Please click the button to upload the file">
                         <label for="recommend" class="break">Will you recommend the site to your friends?</label>
                             <select id="recommend" name="recommend" >
-                                <option value="blank" selected>None
-                                </option>
+                                <option label="Select the recommendation" selected></option>
                                 <option value="maybe">Maybe</option>
                                 <option value="yes" >Yes</option>
                                 <option value="no"> No</option>
@@ -100,22 +103,22 @@
                         <input type="date" name="todaysdate" id="submissiondate" title="Enter today's date">
                         <!--<input type="button" value="Cancel"><br>-->
                         <label for="print2" class="break">Do you want to print the form? Click the PRINT button:</label>
-                        <input type="button" id="print2" value="Print the form" title="Click the button to print" onclick=print()>
-                        <label for="robot" class="break">Robot Check:* 19+79=                        
+                        <input type="button" id="print2" value="Print the form" title="Click the button to print" class="drop" onclick=print()>
+                        <!--<label for="robot" class="break ">Robot Check: What is 19+79? <span class="required">(required)</span><span id="erobot" class="required"></span>                        
                         </label>
-                        <input type ="text" name="robot" id="robot">
+                        <input type ="number" name="robot" id="robot" class="number" size="25" data-rule-rangelength="[98,98]">-->
                             
                         <div class="button">
                             <button type="submit" id="submit">Submit</button>
                                 <button type="reset" value="Reset">Reset</button>
-                                <button type="button" onclick="alert('Are you sure that you want to cancel?')">Cancel</button>
+                                <button type="button"  onclick="alert('Are you sure that you want to cancel?')">Cancel</button>
                         </div>                                                   
                     </fieldset>
                     </form>
         </div>
         <div>
-                <span class="buttonnav"><a href="platty.html">Previous Page</span></a>
-                <span class="buttonnav1"><a href="index.html">Home Page</span></a>
+                <span class="buttonnav"><a class="mainlink" href="platty.html" title="Previous Page">Platy Fish</span></a>
+                <span class="buttonnav1"><a class="mainlink" href="index.html" title="Next Page">Home</span></a>
 
         </div>
         <div>
