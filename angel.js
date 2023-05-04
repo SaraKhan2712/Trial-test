@@ -23,7 +23,15 @@ function answerAngel()
     var l1 = document.getElementById('yes');
     var l2 = document.getElementById('no');
     var l3 = document.getElementById('maybe');
-    if (x.value==10 && l2.checked == true)
+    if(x.value.trim() == '' || !(l1.checked==true) &&(l2.checked==true )&&(l3.checked==true ) )
+    {
+        alert("Please complete the quiz and submit again")
+    }
+    else if(x.value.trim() != '' && ((l1.checked==false) && (l2.checked==false ) && (l3.checked==false ) ))
+    {
+        alert("Please complete the quiz and submit again")
+    }
+    else if (x.value==10 && l2.checked == true)
     {
         alert("Great Job! You have answered both questions correctly!."); 
         
@@ -36,6 +44,7 @@ function answerAngel()
     {
         alert("Almost there!. Answer 1 is wrong and Answer 2 is correct. Please try again.");
     }
+    
     else
     {
         alert("Sorry! You have answered both questions wrong. Please try again");
