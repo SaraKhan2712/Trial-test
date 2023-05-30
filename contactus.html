@@ -64,7 +64,7 @@
                         <input type="email" id="email" name="email" autocomplete="email" size="25" class="break email" placeholder="john.doe@testmail.com" maxlength="25">
                         
                         <label for="phone">Telephone (10 digits) <span class="required">(required)</span><span id="ephone" class="required"></span></label>
-                        <input type="tel" id="phone" name="phone"autocomplete="tel-national" class="break number" data-rule-phoneUS="true" maxlength="10" size="25" data-rule-minlength="10" >
+                        <input type="tel" id="phone" name="phone"autocomplete="tel-national" class="break number" data-rule-phoneUS="true" maxlength="10" size="25" data-rule-minlength="10" aria-describedby="phone-help" >
                         <div id="phone-help" hidden>Telephone should be in the format xxxxxxxxxx where x is a digit</div>
                     </fieldset>
                     <fieldset class="field">
@@ -89,7 +89,8 @@
                             <option value="Others">Others</option>
                         </select>
                         <label for="comment" class="break text">Please provide your suggestion/query in the textbox below:</label>
-                            <textarea name="comment" id="comment" rows="7" cols="30" placeholder="Provide the suggestion here" class="string" data-rule-minlength="30"></textarea>
+                            <textarea name="comment" id="comment" rows="7" cols="30" placeholder="Provide the suggestion here" class="string" data-rule-minlength="30" aria-describedby="comm"></textarea>
+                            <div id="comm" hidden>Minimum characters should be 30</div>
                         <label for="fishimage" class="break">Upload the image if you are not sure of the name/species of the fish:</label>
                         <input type="file" name="fishimage" id="fishimage" class="foc point drop" title="Please click the button to upload the file">
                         <label for="recommend" class="break">Will you recommend the site to your friends?</label>
