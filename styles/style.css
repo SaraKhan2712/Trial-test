@@ -714,3 +714,10 @@ div.pl:hover p, div.pl:focus p{
     margin-left: 8px;  
     padding: 0.5em;  
 }
+
+#phone-help, #comm
+{
+    
+    color: rgb(102, 98, 98);
+    margin-left: 8px;
+}
