@@ -8,6 +8,20 @@
 </head>
 <body>
   <br>
+  <label for="username">Username</label>
+<input id="username" name="username" aria-describedby="username-desc" />
+<button
+  aria-expanded="false"
+  aria-controls="username-desc"
+  aria-label="Help about username"
+  type="button">
+  <span aria-hidden="true">?</span>
+</button>
+<p id="username-desc" hidden>
+  Your username is the name that you use to log in to this service.
+</p>
+<br>
+<br>
   <label for="html5shim-1">Select the range</label>
   <input name="html5shim-1" id="html5shim-1" type="range" min="0" max="100" step="1" title="Range: 0 to 100 in steps of 1" value="50" />
   <p>Press <kbd>Shift</kbd></p>
@@ -49,7 +63,8 @@
 <label for="respond"><b>I would like a response</b></label>
 
     <div class="btn" onclick="window.location.href='contacted.html'" role="button">Submit</div>
-    
+   <button aria-expanded="false" aria-controls="w1" >Show widget</button> 
+   <button aria-expanded="true" aria-controls="w1" >Hide widget</button> 
 
     <table style="border: 2px solid black;">
         <thead>
